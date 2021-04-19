@@ -17,6 +17,8 @@ public class Stringcount {
                 con = con + 1;
             }
         }
+
+
             System.out.println("number of cons are " + "= " + con);
             System.out.println("number of vowels are " + "= " + vov);
 
