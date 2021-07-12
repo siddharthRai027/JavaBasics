@@ -1,21 +1,25 @@
-
-
-import java.util.Arrays;
-import java.util.LinkedHashSet;
+import java.util.Locale;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.LinkedHashSet;
+import java.util.Arrays;
 
 public class Duplicatewords {
 
     public static void main(String[] args) {
+
+
+
         Scanner in = new Scanner(System.in);
-        int testCases = Integer.parseInt(in.nextLine());
-        while (testCases-- > 0) {
-            Scanner sc = new Scanner(System.in);
-            String str = sc.nextLine();
+        int numSentences = Integer.parseInt(in.nextLine());
 
-
+        while (numSentences-- > 0) {
+            String str = in.nextLine();
+            str.toLowerCase(Locale.ROOT);
 
             String[] strWords = str.split("\\s+");
+
 
             LinkedHashSet<String> lhSetWords
                     = new LinkedHashSet<String>(Arrays.asList(strWords));
@@ -33,11 +37,11 @@ public class Duplicatewords {
 
             }
             str = sbTemp.toString();
-            str.equalsIgnoreCase(str);
+
             System.out.println(str);
 
         }
-    }
 
 
     }
+}
