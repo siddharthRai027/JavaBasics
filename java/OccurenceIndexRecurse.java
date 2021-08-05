@@ -17,7 +17,7 @@ public class OccurenceIndexRecurse {
         }}
     public static void main(String[] args) {
         int arr[]={1,3,4,5,3};
-        int ans[]=occur(arr,3,0,0);
+        int ans[]=occur(arr,55,0,0);
         for(int i =0;i<ans.length;i++){
             System.out.println(ans[i]);
         }
